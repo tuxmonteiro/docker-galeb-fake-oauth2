@@ -1,9 +1,9 @@
 FROM nginx:alpine
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 COPY index.json /usr/share/nginx/html/
 
-EXPOSE 80
+EXPOSE 9000
 
 STOPSIGNAL SIGTERM
 
